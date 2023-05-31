@@ -1,0 +1,28 @@
+apiVersion: delivery.ocm.software/v1alpha1
+kind: Unpacker
+metadata:
+  name: incidentmgmtapp
+  namespace: ocm-system
+spec:
+  interval: 10m0s
+  prune: true
+  componentVersionRef:
+    name: incidentmgmtappcap
+    namespace: ocm-system
+  resourceSelector:
+    skipRoot: true
+    followReferences: true
+    matchSelector:
+    - field: "type"
+      values:
+      - kustomize.ocm.fluxcd.io
+  pipelineTemplateRef:
+    kind: GitRepository
+    name: flux-system
+    namespace: flux-system
+    path: ./templates/incidentmgmtapp.yaml
+  values:
+    ic-db:
+      manifests:
+        message: "Welcome to incidentmgmtapp"
+        color: "red"

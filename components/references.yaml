@@ -1,0 +1,7 @@
+name: ic-app
+componentName: github.com/sidhishruti22/ic-app
+version: v1.0.0
+---
+name: ic-db
+componentName: github.com/sidhishruti22/ic-db
+version: v1.0.0

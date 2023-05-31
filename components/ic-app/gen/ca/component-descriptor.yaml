@@ -1,0 +1,33 @@
+apiVersion: ocm.software/v3alpha1
+kind: ComponentVersion
+metadata:
+  name: github.com/sidhishruti22/ic-app
+  provider:
+    name: sidhishruti22
+  version: v1.0.0
+repositoryContexts: []
+spec:
+  resources:
+  - access:
+      localReference: sha256.2cd6efe46e8e280c77b2062730d0a290297dd67bca5792c22795f716324d39a8
+      mediaType: application/yaml
+      type: localBlob
+    name: config
+    relation: local
+    type: configdata.ocm.software
+    version: v1.0.0
+  - access:
+      imageReference: dcom-demo.int.repositories.cloud.sap/incidentmgmt-app-srv:latest
+      type: ociArtifact
+    name: image
+    relation: external
+    type: ociImage
+    version: 6.2.2
+  - access:
+      localReference: sha256.72e58225935d8b85bda3b03b0ee38668f1797f944d3e5598dbae05ba0b3d8cc8
+      mediaType: application/x-tgz
+      type: localBlob
+    name: manifests
+    relation: local
+    type: kustomize.ocm.fluxcd.io
+    version: v1.0.0
