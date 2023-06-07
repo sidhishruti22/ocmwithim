@@ -26,6 +26,8 @@ spec:
       - name: ic-db
         image: incidents-mgmt-dev.int.repositories.cloud.sap/incidentmgmt-db-srv
         imagePullPolicy: IfNotPresent
+        imagePullSecrets:
+           - name: aregcred
         ports:
         - name: http
           containerPort: 9898
