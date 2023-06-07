@@ -4,13 +4,13 @@ metadata:
   name: github.com/sidhishruti22/incidentmgmtapp
   provider:
     name: sidhishruti22
-  version: v1.0.0
+  version: v1.0.1
 repositoryContexts: []
 spec:
   references:
   - componentName: github.com/sidhishruti22/ic-app
     name: ic-app
-    version: v1.0.0
+    version: v1.0.1
   - componentName: github.com/sidhishruti22/ic-db
     name: ic-db
-    version: v1.0.0
+    version: v1.0.1

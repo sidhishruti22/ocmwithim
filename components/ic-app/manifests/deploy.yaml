@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: ic-app
-        image: dcom-demo.int.repositories.cloud.sap/incidentmgmt-app-srv
+        image: incidents-mgmt-dev.int.repositories.cloud.sap/incidentmgmt-app-srv
         imagePullPolicy: IfNotPresent
         ports:
         - name: http

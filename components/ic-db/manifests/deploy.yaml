@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: ic-db
-        image: dcom-demo.int.repositories.cloud.sap/incidentmgmt-db-srv
+        image: incidents-mgmt-dev.int.repositories.cloud.sap/incidentmgmt-db-srv
         imagePullPolicy: IfNotPresent
         ports:
         - name: http

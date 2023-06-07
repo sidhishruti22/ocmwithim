@@ -7,10 +7,10 @@ spec:
   interval: 10m0s
   component: github.com/sidhishruti22/incidentmgmtapp
   version:
-    semver: v1.0.0
+    semver: v1.0.1
     allowRollback: true
   repository:
-    url: incidents-mgmt-dev.int.repositories.cloud.sap
+    url: incidents-mgmt-ocm.int.repositories.cloud.sap
     secretRef:
       name: acreds
   references:
