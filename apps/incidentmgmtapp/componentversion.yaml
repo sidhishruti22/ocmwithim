@@ -7,7 +7,7 @@ spec:
   interval: 10m0s
   component: github.com/sidhishruti22/incidentmgmtapp
   version:
-    semver: v1.0.2
+    semver: v1.0.3
     allowRollback: true
   repository:
     url: incidents-mgmt-ocm.int.repositories.cloud.sap

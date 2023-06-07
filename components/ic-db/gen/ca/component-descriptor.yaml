@@ -4,7 +4,7 @@ metadata:
   name: github.com/sidhishruti22/ic-db
   provider:
     name: sidhishruti22
-  version: v1.0.2
+  version: v1.0.3
 repositoryContexts: []
 spec:
   resources:
@@ -15,9 +15,9 @@ spec:
     name: config
     relation: local
     type: configdata.ocm.software
-    version: v1.0.2
+    version: v1.0.3
   - access:
-      imageReference: dcom-demo.int.repositories.cloud.sap/incidentmgmt-db-srv:latest
+      imageReference: incidents-mgmt-dev.int.repositories.cloud.sap/incidentmgmt-db-srv:latest
       type: ociArtifact
     name: image
     relation: external
@@ -30,4 +30,4 @@ spec:
     name: manifests
     relation: local
     type: kustomize.ocm.fluxcd.io
-    version: v1.0.2
+    version: v1.0.3
