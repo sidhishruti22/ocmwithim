@@ -12,7 +12,7 @@ type: ociImage
 version: 6.2.2
 access:
   type: ociArtifact
-  imageReference: incidents-mgmt-dev.int.repositories.cloud.sap/incidentmgmt-app-srv:latest
+  imageReference: incidents-mgmt-dev.int.repositories.cloud.sap/incident-mgmt:0.0.0
 ---
 name: manifests
 type: kustomize.ocm.fluxcd.io
