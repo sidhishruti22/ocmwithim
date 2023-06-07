@@ -24,7 +24,7 @@ spec:
     type: ociImage
     version: 6.2.2
   - access:
-      localReference: sha256.d624cd7159de1e8cdff3d84484ba45ea5afc593cd6ee067845c76da19dbc2d36
+      localReference: sha256.dc54e73f2be5d19a7deb0a7f3908959870d78364f6f90370c21186a64896a744
       mediaType: application/x-tgz
       type: localBlob
     name: manifests

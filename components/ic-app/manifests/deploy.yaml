@@ -26,8 +26,6 @@ spec:
       - name: ic-app
         image: dcom-demo.int.repositories.cloud.sap/incidentmgmt-app-srv
         imagePullPolicy: IfNotPresent
-        imagePullSecrets:
-           - name: aregcred
         ports:
         - name: http
           containerPort: 9898

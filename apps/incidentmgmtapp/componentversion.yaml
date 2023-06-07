@@ -10,7 +10,7 @@ spec:
     semver: v1.0.0
     allowRollback: true
   repository:
-    url: dcom-demo.int.repositories.cloud.sap
+    url: incidents-mgmt-dev.int.repositories.cloud.sap
     secretRef:
       name: acreds
   references:
