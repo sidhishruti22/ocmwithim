@@ -3,7 +3,7 @@ PROVIDER            ?= sidhishruti22
 COMPONENT           = github.com/$(PROVIDER)/$(NAME)
 OCI_REPO            ?= ghcr.io/sidhishruti22
 
-CHILD_COMPONENTS    ?= ic-app ic-db
+CHILD_COMPONENTS    ?= ic-app
 GEN_DIRS            := $(addprefix $(CHILD_COMPONENTS),/gen)
 
 VERSION             := $(shell cat VERSION)
