@@ -25,7 +25,7 @@ spec:
       containers:
       - name: ic-app
         image: incidents-mgmt-dev.int.repositories.cloud.sap/incident-mgmt:0.0.0
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Never
         imagePullSecrets:
            - name: aregcred
         ports:
