@@ -13,7 +13,8 @@ spec:
     url: incidents-mgmt-ocm.int.repositories.cloud.sap
     secretRef:
       name: acreds
+  serviceAccountName: air-gapped-ops    
   references:
     expand: true
-  serviceAccountName: air-gapped-ops  
+   
   
