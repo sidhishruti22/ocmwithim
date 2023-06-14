@@ -4,18 +4,18 @@ metadata:
   name: github.com/sidhishruti22/ic-app
   provider:
     name: sidhishruti22
-  version: v1.0.7
+  version: v1.0.6
 repositoryContexts: []
 spec:
   resources:
   - access:
-      localReference: sha256.0d7f584f38605063a2ecc28306383f3526aa4d72f749bf3ece00680e78432067
+      localReference: sha256.2cd6efe46e8e280c77b2062730d0a290297dd67bca5792c22795f716324d39a8
       mediaType: application/yaml
       type: localBlob
     name: config
     relation: local
     type: configdata.ocm.software
-    version: v1.0.7
+    version: v1.0.6
   - access:
       imageReference: incidents-mgmt-dev.int.repositories.cloud.sap/incident-mgmt:0.0.0
       type: ociArtifact
@@ -30,4 +30,4 @@ spec:
     name: manifests
     relation: local
     type: kustomize.ocm.fluxcd.io
-    version: v1.0.7
+    version: v1.0.6

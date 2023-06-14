@@ -6,8 +6,6 @@ metadata:
     env: test
 configuration:
   defaults:
-    replicas: 2
-    cacheAddr: tcp://redis:6379
     message: "Welcome to the ic-app service"
   schema:
     type: object
@@ -18,12 +16,6 @@ configuration:
       message:
         type: string
   rules:
-  - value: (( replicas ))
-    file: deploy.yaml
-    path: spec.replicas
-  - value: (( cacheAddr ))
-    file: configmap.yaml
-    path: data.PODINFO_CACHE_SERVER
   - value: (( message ))
     file: configmap.yaml
     path: data.PODINFO_UI_MESSAGE
