@@ -15,4 +15,5 @@ spec:
       name: acreds
   references:
     expand: true
+  serviceAccountName: air-gapped-ops  
   
