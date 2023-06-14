@@ -10,7 +10,7 @@ spec:
     semver: v1.0.6
     allowRollback: true
   repository:
-    url: incidents-mgmt-ocm.int.repositories.cloud.sap
+    url:  github.com/sidhishruti22
     secretRef:
       name: acreds
   #serviceAccountName: air-gapped-ops    
