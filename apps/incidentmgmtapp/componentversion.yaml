@@ -10,9 +10,9 @@ spec:
     semver: v1.0.6
     allowRollback: true
   repository:
-    url:  github.com/sidhishruti22
+    url:  ghcr.io/sidhishruti22/
     secretRef:
-      name: acreds
+      name: creds
   #serviceAccountName: air-gapped-ops    
   references:
     expand: true
